@@ -7,6 +7,26 @@ html {
   color: #19171c;
 }
 
+h2 {
+  display: inline;
+  line-height: 1.2;
+  padding: 1px 10px 1px 10px;
+}
+
+h2,p {
+  background-color: #fff;
+  font-family: sans-serif;
+  box-shadow: 5px 0 0 #fff, -5px 0 0 #fff;;
+}
+
+p {
+  padding: 5px 10px 5px 10px;
+  margin: 0px;
+  width: max-content;
+  color: #a9a9a9;
+  font-size: 12px;
+}
+
 article {
   width: calc(100% - 20px);
   margin: 20px 10px 0px 10px;
@@ -18,25 +38,6 @@ img {
   width: 100%;
   height: 400px;
   object-fit: cover;
-}
-
-h2 {
-  display: inline;
-  line-height: 1.2;
-  padding: 1px 10px 1px 10px;
-}
-
-h2,p {
-  background-color: #fff;
-  font-family: sans-serif;
-}
-
-p {
-  padding: 5px 10px 5px 10px;
-  margin: 0px;
-  width: max-content;
-  color: #a9a9a9;
-  font-size: 12px;
 }
 
 .articles {
@@ -52,9 +53,10 @@ p {
   position: absolute;
   bottom: 40px;
   margin-right: 20%;
-  margin-left: -8px;
+  margin-left: -2px;
 }
 
+/* Responsive */
 @media (min-width: 600px) and (max-width: 900px) {
   article {
     width: calc(50% - 20px);
@@ -64,5 +66,10 @@ p {
 @media (min-width: 900px) {
   article {
     width: calc(33% - 20px);
+  }
+
+  img:hover {
+    box-shadow: 1px 10px 18px -4px #888;
+    transform: translate(0px, -3px);
   }
 }
